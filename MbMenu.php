@@ -9,6 +9,7 @@
  */
 
 Yii::import('zii.widgets.CMenu');
+Yii::import('application.extensions.mbmenu.Browser');
 
 class MbMenu extends CMenu
 {
@@ -128,9 +129,15 @@ class MbMenu extends CMenu
             throw new CException(Yii::t('MbMenu', 'baseUrl must be set. This is done automatically by calling publishAssets()'));
  
 	  	  $cs=Yii::app()->getClientScript();
-	  	  if($url===null)
+	  	  if($url===null) { 
 	  		  $url=$this->baseUrl.'/mbmenu.css';
-	  	  $cs->registerCssFile($url,'screen');
+          $cs->registerCssFile($url,'screen');
+          $browser = Browser::detect();
+          if ($browser['name'] == 'msie' && $browser['version'] < 8)
+            $cs->registerCssFile($this->baseUrl.'/mbmenu_iestyles.css','screen');
+        } else {
+	  	    $cs->registerCssFile($url,'screen');
+        }
 	  }
     
 	  protected function renderMenuRecursive($items)
@@ -198,10 +205,12 @@ class MbMenu extends CMenu
           $this->publishAssets();
           $this->registerClientScripts();
 			    $this->registerCssFile($this->cssFile);    
-          
+          $htmlOptions['id']='nav-container';
+          echo CHtml::openTag('div',$htmlOptions)."\n";          
           $htmlOptions['id']='nav-bar';
           echo CHtml::openTag('div',$htmlOptions)."\n";
           parent::run();
+          echo CHtml::closeTag('div');
           echo CHtml::closeTag('div');
     }
 	
