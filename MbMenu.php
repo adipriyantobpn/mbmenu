@@ -4,7 +4,7 @@
  * MbMenu class file.
  *
  * @author Mark van den Broek (mark@heyhoo.nl)
- * @copyright Copyright &copy; 2010 HeyHoo
+ * @copyright Copyright &copy; 2010-2012 HeyHoo
  *
  */
 
@@ -175,7 +175,14 @@ class MbMenu extends CMenu
 	  		{
 	  			$items[$i]['items']=$this->normalizeItems($item['items'],$route,$hasActiveChild, 1);
 	  			if(empty($items[$i]['items']) && $this->hideEmptyItems)
+	  			{
 	  				unset($items[$i]['items']);
+					if(!isset($item['url']))
+					{
+						unset($items[$i]);
+						continue;				
+					}
+	  			}
 	  		}
 	  		if(!isset($item['active']))
 	  		{
