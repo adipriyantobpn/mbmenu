@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://www.yiiframework.com/extension/mbmenu/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    	<meta charset="UTF-8">
+		<meta name="keywords" content="yii framework, extension, User Interface, ">
+	<meta name="description" content="MbMenu dropdown menu">
+    <link rel="shortcut icon" type="image/x-icon" href="http://static.yiiframework.com/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./readme_files/site-20130404102234.css">
+
+	<link title="Lives News for Yii Framework" rel="alternate" type="application/rss+xml" href="http://www.yiiframework.com/rss.xml/">
+	<title>mbmenu | Extension | Yii PHP Framework</title>
+	<link rel="search" type="application/opensearchdescription+xml" title="Yii API Search" href="http://www.yiiframework.com/search-api.xml">
+	<link rel="search" type="application/opensearchdescription+xml" title="Yii Site Search" href="http://www.yiiframework.com/search-site.xml">
+</head>
+
+<body class="webkit safari chrome win" data-twttr-rendered="true">
+<div class="layout-main">
+
+	<div class="layout-main-shortcuts">
+		<div class="container_12">
+            <a style="color:darkred;" href="https://github.com/yiisoft/yii2">Github</a> ·
+            <a style="color:darkgreen;" href="https://twitter.com/yiiframework">Twitter</a> ·
+            <a style="color:darkblue;" href="https://www.facebook.com/groups/yiitalk/">Facebook</a> ·
+            <a href="http://www.yiiframework.com/doc/guide/">Guide</a> ·
+            <a href="http://www.yiiframework.com/doc/api/">Class Reference</a> ·
+            <a href="http://www.yiiframework.com/doc-2.0/guide-index.html">Guide 2.0</a> ·
+            <a href="http://www.yiiframework.com/doc-2.0/index.html">API 2.0</a> ·
+            <a href="http://www.yiiframework.com/wiki/">Wiki</a> ·
+            <a href="http://www.yiiframework.com/extensions/">Extensions</a> ·
+            <a href="http://www.yiiframework.com/forum/">Forum</a> ·
+			<a href="http://www.yiiframework.com/chat/">Live Chat</a> ·
+                            <a href="http://www.yiiframework.com/login/">Login</a>            		</div>
+	</div>
+
+	<div class="layout-main-bg">
+		<div class="layout-main-header">
+			<div class="container_12">
+				<div class="grid_4">
+					<a class="logo" href="http://www.yiiframework.com/"><img alt="Yii Logo" src="./readme_files/logo.png" title="Yii Framework" width="284" height="64"></a>				</div>
+				<div class="grid_8 omega">
+					<div class="nav">
+						<ul class="menu" id="yw0">
+<li class="about"><a class="main" href="http://www.yiiframework.com/about/">About</a>
+<ul>
+<li><a href="http://www.yiiframework.com/about/">About Yii</a></li>
+<li><a href="http://www.yiiframework.com/features/">Features</a></li>
+<li><a href="http://www.yiiframework.com/performance/">Performance</a></li>
+<li><a href="http://www.yiiframework.com/license/">License</a></li>
+<li class="last"><a href="http://www.yiiframework.com/contact/">Contact Us</a></li>
+</ul>
+</li>
+<li class="downloads active"><a class="main" href="http://www.yiiframework.com/download/">Downloads</a>
+<ul>
+<li><a href="http://www.yiiframework.com/download/">Framework</a></li>
+<li class="active"><a href="http://www.yiiframework.com/extensions/">Extensions</a></li>
+<li><a href="http://www.yiiframework.com/demos/">Demos</a></li>
+<li class="last"><a href="http://www.yiiframework.com/logo/">Logo</a></li>
+</ul>
+</li>
+<li class="documentation"><a class="main" href="http://www.yiiframework.com/doc/">Documentation</a>
+<ul>
+<li><a href="http://www.yiiframework.com/tour/">Take the Tour</a></li>
+<li><a href="http://www.yiiframework.com/tutorials/">Tutorials</a></li>
+<li><a href="http://www.yiiframework.com/doc/api/">Class Reference</a></li>
+<li><a href="http://www.yiiframework.com/doc-2.0/guide-index.html">Guide 2.0</a></li>
+<li><a href="http://www.yiiframework.com/doc-2.0/index.html">Class Reference 2.0</a></li>
+<li><a href="http://www.yiiframework.com/wiki/">Wiki</a></li>
+<li><a href="http://www.yiiframework.com/screencasts/">Screencasts</a></li>
+<li class="last"><a href="http://www.yiiframework.com/resources/">Resources</a></li>
+</ul>
+</li>
+<li class="development"><a class="main" href="https://github.com/yiisoft/yii/commits/master">Development</a>
+<ul>
+<li><a href="http://www.yiiframework.com/contribute/">Contribute to Yii</a></li>
+<li><a href="https://github.com/yiisoft/yii/commits/master">Latest Updates</a></li>
+<li><a href="https://github.com/yiisoft/yii/issues/new">Report a Bug</a></li>
+<li class="last"><a href="http://www.yiiframework.com/security/">Report a Security Issue</a></li>
+</ul>
+</li>
+<li class="community last"><a class="main" href="http://www.yiiframework.com/community/">Community</a>
+<ul>
+<li><a href="http://www.yiiframework.com/forum/">Forum</a></li>
+<li><a href="http://www.yiiframework.com/chat/">Live Chat</a></li>
+<li><a href="http://www.yiiframework.com/news/">News</a></li>
+<li><a href="http://www.yiiframework.com/user/halloffame/">Hall of Fame</a></li>
+<li class="last"><a href="http://www.yiiframework.com/badges/">Badges</a></li>
+</ul>
+</li>
+</ul>						<div class="search">
+							<form method="get" action="http://www.yiiframework.com/search/">
+								<div class="keyword">
+	                                <input name="q" value="">
+									<a href="http://www.yiiframework.com/extension/mbmenu/#" title="search" class="global-search">search</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="container_12">
+						<div class="grid_12">
+												<div class="layout-main-submenu">
+					<ul>
+						<li class="main">Downloads</li>
+												<li><a href="http://www.yiiframework.com/download/">Framework</a></li>
+												<li class="active"><a href="http://www.yiiframework.com/extensions/">Extensions</a></li>
+												<li><a href="http://www.yiiframework.com/demos/">Demos</a></li>
+												<li><a href="http://www.yiiframework.com/logo/">Logo</a></li>
+											</ul>
+				</div>
+				
+				
+				
+								<div class="grid_9 alpha">
+									<div class="layout-main-body">
+						<div class="extension-view">
+    	<h1>Yii 1.1: mbmenu <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./readme_files/saved_resource.htm" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 248px; height: 20px; display: none !important;"></iframe></h1>
+
+	<div class="tagline">MbMenu dropdown menu</div>
+
+	<div class="g-voter-reporter">
+		<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Extension&id=217"><span>report it</span></a>		<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Extension&id=217&vote=1"><span>84</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Extension&id=217&vote=0"><span>1</span></a></li>
+</ul>
+<div class="clear"></div></div>	</div>
+	<div class="g-starring">
+		<span class="widget-follower"><a class="g-login" title="Click to follow" href="http://www.yiiframework.com/site/star/?type=Extension&id=217&v=1"><img alt="Click to follow" src="./readme_files/star_off.gif" title="" width="15" height="15"></a><span>69 followers</span></span>	</div>
+	<div class="clear"></div>
+
+	<div class="content g-markdown"><div class="google-ad" style="float:right;margin:0 0 1em 1em;">
+<script src="./readme_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./readme_files/ga.js"></script><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3732587985864947";
+google_ad_slot = "7504392189";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+		<div class="toc"><div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh0">Resources</a></div>
+<div class="ref level-2"><a href="http://www.yiiframework.com/extension/mbmenu/#hh1">Documentation</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh2">Requirements</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh3">Installation</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh4">Usage</a></div>
+<div class="ref level-2"><a href="http://www.yiiframework.com/extension/mbmenu/#hh5">Change Log</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh6">January 23, 2012</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh7">February 23, 2010</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh8">February 22, 2010</a></div>
+<div class="ref level-3"><a href="http://www.yiiframework.com/extension/mbmenu/#hh9">February 18, 2010</a></div></div>
+<p>MbMenu is an extension to CMenu wich provides you a nice dropdown menu.</p>
+
+<h3 id="hh0">Resources <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh0">¶</a></h3>
+
+<ul><li><a href="http://yii.heyhoo.com/mbmenu/">Home page</a></li>
+<li><a href="http://yii.heyhoo.com/mbmenu/">Try out a demo</a></li>
+<li><a href="http://yii.heyhoo.com/mbmenu/site/contact.html">Report a bug</a></li>
+</ul><h2 id="hh1">Documentation <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh1">¶</a></h2>
+
+<h3 id="hh2">Requirements <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh2">¶</a></h3>
+
+<ul><li>Yii 1.0 or above</li>
+<li>Tested on IE6/IE7/IE8/Firefox/Chrome </li>
+</ul><h3 id="hh3">Installation <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh3">¶</a></h3>
+
+<ul><li>Extract the 'mbmenu' folder under <code>protected/extensions</code></li>
+</ul><h3 id="hh4">Usage <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh4">¶</a></h3>
+
+<p>The usage of this extension is allmost the same like CMenu.</p>
+
+<p>The following example shows how to use MbMenu:</p>
+
+<div class="hl-code"><div class="hl-main"><pre><span class="hl-inlinetags">&lt;?php</span> <span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">widget</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">application.extensions.mbmenu.MbMenu</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+            <span class="hl-quotes">'</span><span class="hl-string">items</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+                <span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Home</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/site/index</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">,
+                </span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Contact</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/site/contact</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">,
+                  </span><span class="hl-quotes">'</span><span class="hl-string">items</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+                    <span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">sub 1 contact</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">,
+                    </span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">sub 2 contact</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">,
+                  </span><span class="hl-brackets">)</span><span class="hl-code">,
+                </span><span class="hl-brackets">)</span><span class="hl-code">,
+                </span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Test</span><span class="hl-quotes">'</span><span class="hl-code">,
+                  </span><span class="hl-quotes">'</span><span class="hl-string">items</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+                    <span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Sub 1</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/site/page</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">view</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">sub1</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">,
+                    </span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Sub 2</span><span class="hl-quotes">'</span><span class="hl-code">,
+                      </span><span class="hl-quotes">'</span><span class="hl-string">items</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+                        <span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Sub sub 1</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/site/page</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">view</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">subsub1</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">,
+                        </span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">Sub sub 2</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/site/page</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-quotes">'</span><span class="hl-string">view</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">subsub2</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">,
+                      </span><span class="hl-brackets">)</span><span class="hl-code">,
+                    </span><span class="hl-brackets">)</span><span class="hl-code">,
+                  </span><span class="hl-brackets">)</span><span class="hl-code">,
+                </span><span class="hl-brackets">)</span><span class="hl-code">,
+            </span><span class="hl-brackets">)</span><span class="hl-code">,
+    </span><span class="hl-brackets">)</span><span class="hl-brackets">)</span><span class="hl-code">; </span><span class="hl-inlinetags">?&gt;</span></pre></div></div>
+
+<p>Replace</p>
+
+<pre>&lt;div id="mainmenu"&gt;</pre>
+
+<p>with</p>
+
+<pre>&lt;div id="mainMbMenu"&gt;</pre>
+
+<p>to avoid conflicts with the standard CSS for the menu.</p>
+
+<h2 id="hh5">Change Log <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh5">¶</a></h2>
+
+<h3 id="hh6">January 23, 2012 <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh6">¶</a></h3>
+
+<ul><li>v1.3 fix mentioned by Zyphers in function normalizeItems</li>
+</ul><h3 id="hh7">February 23, 2010 <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh7">¶</a></h3>
+
+<ul><li>v1.2 fix for IE7</li>
+</ul><h3 id="hh8">February 22, 2010 <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh8">¶</a></h3>
+
+<ul><li>v1.1 minor update in creation of class styles</li>
+</ul><h3 id="hh9">February 18, 2010 <a class="anchor" href="http://www.yiiframework.com/extension/mbmenu/#hh9">¶</a></h3>
+
+<ul><li>Initial release.</li>
+</ul>	</div>
+
+	<div class="google-ad" style="margin:10px 0 10px 200px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3732587985864947";
+google_ad_slot = "5681577484";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div><div class="widget-comment-list" id="comments">
+	<div class="comments">
+		<h3>Total 20 comments</h3>
+				<div class="comment alt-0">
+			<a class="cid" id="c16559" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c16559">#16559</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=16559"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=16559&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=16559&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/216418/">Jim K</a> at 2014/03/05 04:13pm</div>
+			<div class="title">CSS &amp; Color changes</div>
+			<div class="content"><p>@kiran &amp; @Kradam:</p>
+
+<p>COLORS:<br>
+In order to change the colors you must modify source/nav1_bg.gif and source/nav1_active.gif which provide the background and active selection colors.  You can actually make this look nicer if you switch them to clean png files with gradients or some some such instead of the gif.  If you do this you need to update the mbmenu.css file - just to a find/replace, no other edits are needed.</p>
+
+<p>Activating the CSS:  In order make the mbmenu.css active and not conflict with the default Yii css (blueprint), you need to update main.php as:</p>
+
+<div class="hl-code"><div class="hl-main"><pre><span class="hl-identifier">From</span><span class="hl-code">:
+    &lt;</span><span class="hl-identifier">div</span> <span class="hl-identifier">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">mainmenu</span><span class="hl-quotes">"</span><span class="hl-code">&gt;
+        &lt;?</span><span class="hl-identifier">php</span> <span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">widget</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">zii.widgets.CMenu</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span>
+<span class="hl-identifier">To</span><span class="hl-code">:
+    &lt;</span><span class="hl-identifier">div</span> <span class="hl-identifier">id</span><span class="hl-code">=</span><span class="hl-quotes">"</span><span class="hl-string">mainMbMenu</span><span class="hl-quotes">"</span><span class="hl-code">&gt;
+        &lt;?</span><span class="hl-identifier">php</span> <span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span class="hl-identifier">widget</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">application.extensions.mbmenu.MbMenu</span><span class="hl-quotes">'</span><span class="hl-code">,</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span></pre></div></div>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c16108" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c16108">#16108</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=16108"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=16108&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=16108&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/46069/">jcagentzero</a> at 2014/01/21 01:11am</div>
+			<div class="title">The first menu I used!</div>
+			<div class="content"><p>Great extension and easy to learn, I remember the days when I am only guessing.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c15828" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c15828">#15828</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=15828"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=15828&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=15828&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/205311/">noorr_swati</a> at 2013/12/20 07:53am</div>
+			<div class="title">visible is not working</div>
+			<div class="content"><p>visible is not working with the links that have children
+what i do?</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c13911" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c13911">#13911</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=13911"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=13911&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=13911&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/88254/">kradam</a> at 2013/07/05 08:02am</div>
+			<div class="title">Yii standard CSS</div>
+			<div class="content"><p>Does anyone modified mbmenu CSS to fit the style that comes with yii? IMHO there is clash of colors between mbmenu orange an yellow clash and yii blue gradients.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c11871" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c11871">#11871</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=11871"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11871&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11871&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/60764/">ItsYii</a> at 2013/02/10 04:44am</div>
+			<div class="title">Active/Current selected Image</div>
+			<div class="content"><p>Hi I'm trying to have a different image depending on the page I'm on (like an active or current link). Here is my code.</p>
+
+<div class="hl-code"><div class="hl-main"><pre><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">label</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">&lt;img src="</span><span class="hl-quotes">'</span><span class="hl-code">.</span><span class="hl-identifier">Yii</span><span class="hl-code">::</span><span class="hl-identifier">app</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">-&gt;</span><span class="hl-identifier">request</span><span class="hl-code">-&gt;</span><span class="hl-identifier">baseUrl</span><span class="hl-code">.</span><span class="hl-quotes">'</span><span class="hl-string">/images/products.gif" /&gt;</span><span class="hl-quotes">'</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">url</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-reserved">array</span><span class="hl-brackets">(</span><span class="hl-quotes">'</span><span class="hl-string">/category/index</span><span class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">,
+                  </span><span class="hl-quotes">'</span><span class="hl-string">items</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-var">$items</span><span class="hl-code">, </span><span class="hl-quotes">'</span><span class="hl-string">active</span><span class="hl-quotes">'</span><span class="hl-code">=&gt;</span><span class="hl-quotes">'</span><span class="hl-string">&lt;img src="</span><span class="hl-quotes">'</span><span class="hl-code">.</span><span class="hl-identifier">Yii</span><span class="hl-code">::</span><span class="hl-identifier">app</span><span class="hl-brackets">(</span><span class="hl-brackets">)</span><span class="hl-code">-&gt;</span><span class="hl-identifier">request</span><span class="hl-code">-&gt;</span><span class="hl-identifier">baseUrl</span><span class="hl-code">.</span><span class="hl-quotes">'</span><span class="hl-string">/images/products-on.gif" /&gt;</span><span class="hl-quotes">'</span>
+                <span class="hl-brackets">)</span><span class="hl-code">,</span></pre></div></div>
+
+<p>'active'=&gt; This doesn't have any effect.</p>
+
+<p>Also is there a hover feature for images too</p>
+
+<p>Thanks</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c11044" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c11044">#11044</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=11044"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11044&vote=1"><span>1</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11044&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link bronze" href="http://www.yiiframework.com/user/25963/">kiran sharma</a> at 2012/12/12 03:52am</div>
+			<div class="title">@mr.shadoww</div>
+			<div class="content"><p>try after removing assets files under  projectFolder/assets/*</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c11043" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c11043">#11043</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=11043"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11043&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11043&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/97721/">mr.shadoww</a> at 2012/12/12 03:46am</div>
+			<div class="title">still</div>
+			<div class="content"><p>@kiran sharma at protected\extensions\mbmenu\source folder..i change the nav1_active1.gif file, it suppose to be change the color of the menu, but it don't, and you know what? even all file at protected\extensions\mbmenu\source folder i deleted and let the ..\source folder empty it's still give me the same menu layout...:( have you try to vanished file in the ..\source folder??</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c11028" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c11028">#11028</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=11028"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11028&vote=1"><span>1</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11028&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link bronze" href="http://www.yiiframework.com/user/25963/">kiran sharma</a> at 2012/12/11 04:00am</div>
+			<div class="title">@mr.shadoww</div>
+			<div class="content"><p>i had use this extension much time before.
+and as i know menu background is generated by image(s),
+so to change background color you had to replace that image(s).
+you can found that images and their path by inspect element.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c11027" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c11027">#11027</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=11027"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11027&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=11027&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/97721/">mr.shadoww</a> at 2012/12/11 03:53am</div>
+			<div class="title">how to change menu background color</div>
+			<div class="content"><p>seriously i can't change or modify the menu style, event all asset in protected\extensions\mbmenu\source i deleted it still not effect.</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c10185" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c10185">#10185</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=10185"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=10185&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=10185&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/76128/">brunocalado</a> at 2012/10/09 10:51am</div>
+			<div class="title">Customize MBMenu CSS</div>
+			<div class="content"><p>I'm having trouble to change the style. How can I do it?</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c9366" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c9366">#9366</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=9366"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=9366&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=9366&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/60764/">ItsYii</a> at 2012/08/07 05:35am</div>
+			<div class="title">Generate Model drop down</div>
+			<div class="content"><p>How can I make the drop down list automatically gather all my models, is it possible with this extension? So for example if I click on one of my Menu items "Products" I want all the products model to show on the drop dow.</p>
+
+<p>Thanks</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c8208" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c8208">#8208</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=8208"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=8208&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=8208&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/3500/">Solleon</a> at 2012/05/17 03:00pm</div>
+			<div class="title">Awesome!</div>
+			<div class="content"><p>Very nice extension! Awesome!</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c6938" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c6938">#6938</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=6938"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6938&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6938&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/56172/">bilijen</a> at 2012/02/14 05:16pm</div>
+			<div class="title">Works out of the box</div>
+			<div class="content"><p>Great extension, thank you!</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c6598" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c6598">#6598</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=6598"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6598&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6598&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/4193/">zyphers</a> at 2012/01/20 04:18am</div>
+			<div class="title">hideEmptyItems property doesn't work</div>
+			<div class="content"><p>As CMenu's hideEmptyItems property is a bug according to <a href="http://code.google.com/p/yii/issues/detail?id=3029" title="issue 3029">issue 3029</a>. And it's already fix in Yii's 1.1.9 as MbMenu bases on CMenu and has override a function <strong>normalizeItems</strong> so it should be fixed too.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c6052" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c6052">#6052</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=6052"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6052&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=6052&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/12934/">Alexandre Sena Coelho</a> at 2011/12/08 05:40am</div>
+			<div class="title">Very nice extension</div>
+			<div class="content"><p>It's useful for me. Great job!</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c5998" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c5998">#5998</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=5998"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5998&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5998&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/10203/">javed alam</a> at 2011/12/04 06:37am</div>
+			<div class="title">Ajax links</div>
+			<div class="content"><p>How can we use Ajax links.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c5950" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c5950">#5950</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=5950"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5950&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5950&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/27118/">Fixticks</a> at 2011/11/28 01:14pm</div>
+			<div class="title">Important instructions, thanks nafa</div>
+			<div class="content"><p>Why isnt this part of the installation instructions.
+change 
+div id = "mainmenu"&gt; 
+to..
+div id = "mainMbMenu"&gt;</p>
+
+<p>in protected/views/layouts/main.php</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c5655" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c5655">#5655</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=5655"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5655&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5655&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/30745/">StarSight</a> at 2011/10/28 10:04pm</div>
+			<div class="title">Can not change Styles (cont)</div>
+			<div class="content"><p>I have now cleared the Assets folder in the root directory (was not previously familiar with it), and I still can not edit the styles.  Changes made to the mbmenu.css file in the /protected/extensions/mbmenu/source folder do not edit the menu. I assume the menu would use the mbmenu.css for formating, but I can delete the file with no effect to the menu styling.  The current styling of the menu is the same as the example at http://yii.heyhoo.com/mbmenu/.  What else could I check?  Thanks for your help.</p>
+</div>
+					</div>
+				<div class="comment alt-0">
+			<a class="cid" id="c5645" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c5645">#5645</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=5645"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5645&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5645&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/3725/">heyhoo</a> at 2011/10/28 05:33am</div>
+			<div class="title">CSS Styles</div>
+			<div class="content"><p>@starsight: did you clear the assets folder?</p>
+</div>
+					</div>
+				<div class="comment alt-1">
+			<a class="cid" id="c5638" title="permalink to this comment" href="http://www.yiiframework.com/extension/mbmenu/#c5638">#5638</a>
+			<a class="widget-reporter" title="Please report to us if you find any inappropriate content." href="http://www.yiiframework.com/site/report/?type=Comment&id=5638"><span>report it</span></a>			<div class="widget-voter"><ul>
+	<li class="vote up"><a title="Thumb up" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5638&vote=1"><span>0</span></a></li>
+	<li class="vote down"><a title="Thumb down" class="g-login" href="http://www.yiiframework.com/site/vote/?type=Comment&id=5638&vote=0"><span>0</span></a></li>
+</ul>
+<div class="clear"></div></div>			<div class="meta"><a class="g-user-rank-link" href="http://www.yiiframework.com/user/30745/">StarSight</a> at 2011/10/27 10:00pm</div>
+			<div class="title">Can not change Styles</div>
+			<div class="content"><p>Have tried to edit the mbmenu.css file in the extensions/mbmenu/source folder but there were no changes.  What could be wrong?</p>
+</div>
+					</div>
+			</div>
+	<div id="comment-add">
+		<h3 id="add-comment">Leave a comment</h3>
+
+			<p>Please <a class="g-login" rel="/extension/mbmenu/#add-comment" href="http://www.yiiframework.com/extension/mbmenu/#">login</a> to leave your comment.</p>
+		</div>
+</div>
+</div>
+
+					</div>
+								</div>
+				
+								<div class="grid_3 omega">
+					<div class="layout-main-right">
+						<div class="extension-portlets">
+	<a href="http://www.yiiframework.com/ext/create/" class="btn btn-success btn-large action">Create extension</a>
+
+<div class="widget-search-box">
+    <form method="get" action="http://www.yiiframework.com/search/">
+        <strong>Search Extensions</strong>
+		<input type="text" name="q" class="keyword g-text">
+        <input type="hidden" name="type" value="extension">
+        <input type="hidden" name="lang" value="">
+        <input type="submit" value="Find" class="btn btn-info">
+	</form>
+</div><div class="downloads">
+    <strong>Downloads</strong>
+        <ul class="g-list-none">
+                <li>» <a title="v 1.3" href="http://www.yiiframework.com/extension/mbmenu/files/mbmenu_v1.3.zip">mbmenu_v1.3.zip</a></li>
+                <li>» <a title="v 1.2" href="http://www.yiiframework.com/extension/mbmenu/files/mbmenu_1.2.zip">mbmenu_1.2.zip</a></li>
+                <li>» <a title="v 1.1" href="http://www.yiiframework.com/extension/mbmenu/files/mbmenu_1.1.zip">mbmenu_1.1.zip</a></li>
+            </ul>
+    <div class="see-all"><a href="http://www.yiiframework.com/ext/files/?id=217">See all »</a></div>
+    </div>
+<ul class="info g-list-none">
+    <li><b>Yii Version</b>: <b>1.1</b></li>
+    <li><b>License</b>: <a target="_blank" rel="nofollow" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></li>
+    <li><b>Developed by</b>: <a class="g-user-rank-link" href="http://www.yiiframework.com/user/3725/">heyhoo</a></li>
+    <li><b>Category</b>: <a href="http://www.yiiframework.com/extensions/?category=15">User Interface</a></li>
+    <li><b>Votes</b>: <span class="g-vote plus" title="84 votes up">+84</span> / <span class="g-vote minus" title="1 votes down">-1</span></li>
+    <li><b>Downloaded</b>: 17,955 times</li>
+    <li><b>Created on</b>: Feb 18, 2010</li>
+    <li><b>Last updated</b>: Oct 9, 2012</li>
+    </ul>
+
+	<div class="google-ad" style="margin:100px 0 0 10px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3732587985864947";
+google_ad_slot = "9764720390";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div>					</div>
+				</div>
+								<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+					</div>
+	</div>
+
+	<div class="layout-main-footer">
+		<div class="container_12">
+			<div class="grid_6">
+				<ul class="menu">
+				<li class="main">About
+<ul class="sub">
+<li><a href="http://www.yiiframework.com/about/">About Yii</a></li>
+<li><a href="http://www.yiiframework.com/features/">Features</a></li>
+<li><a href="http://www.yiiframework.com/performance/">Performance</a></li>
+<li><a href="http://www.yiiframework.com/license/">License</a></li>
+<li><a href="http://www.yiiframework.com/contact/">Contact Us</a></li>
+</ul>
+</li>
+<li class="main">Downloads
+<ul class="sub">
+<li><a href="http://www.yiiframework.com/download/">Framework</a></li>
+<li><a href="http://www.yiiframework.com/extensions/">Extensions</a></li>
+<li><a href="http://www.yiiframework.com/demos/">Demos</a></li>
+<li><a href="http://www.yiiframework.com/logo/">Logo</a></li>
+</ul>
+</li>
+<li class="main">Documentation
+<ul class="sub">
+<li><a href="http://www.yiiframework.com/tour/">Take the Tour</a></li>
+<li><a href="http://www.yiiframework.com/tutorials/">Tutorials</a></li>
+<li><a href="http://www.yiiframework.com/doc/api/">Class Reference</a></li>
+<li><a href="http://www.yiiframework.com/doc-2.0/guide-index.html">Guide 2.0</a></li>
+<li><a href="http://www.yiiframework.com/doc-2.0/index.html">Class Reference 2.0</a></li>
+<li><a href="http://www.yiiframework.com/wiki/">Wiki</a></li>
+<li><a href="http://www.yiiframework.com/screencasts/">Screencasts</a></li>
+<li><a href="http://www.yiiframework.com/resources/">Resources</a></li>
+</ul>
+</li>
+<li class="main">Development
+<ul class="sub">
+<li><a href="http://www.yiiframework.com/contribute/">Contribute to Yii</a></li>
+<li><a href="https://github.com/yiisoft/yii/commits/master">Latest Updates</a></li>
+<li><a href="https://github.com/yiisoft/yii/issues/new">Report a Bug</a></li>
+<li><a href="http://www.yiiframework.com/security/">Report a Security Issue</a></li>
+</ul>
+</li>
+<li class="main">Community
+<ul class="sub">
+<li><a href="http://www.yiiframework.com/forum/">Forum</a></li>
+<li><a href="http://www.yiiframework.com/chat/">Live Chat</a></li>
+<li><a href="http://www.yiiframework.com/news/">News</a></li>
+<li><a href="http://www.yiiframework.com/user/halloffame/">Hall of Fame</a></li>
+<li><a href="http://www.yiiframework.com/badges/">Badges</a></li>
+</ul>
+</li>
+				</ul>
+			</div>
+			<div class="grid_1">&nbsp;</div>
+			<div class="grid_5">
+				<h3>Yii Supporters</h3>
+				<ul class="g-list-none supporters">
+					<li><a href="http://www.ext4yii.com/">The Ext4Yii Framework</a> is a professional PHP Yii extension which provides server-side ExtJS functionality.</li>
+				</ul>
+			</div>
+
+			<div class="clear"></div>
+			<div class="grid_12 copyright">
+				<ul class="social">
+					<li class="twitter"><a href="https://twitter.com/yiiframework" target="_blank" rel="nofollow" title="follow us on twitter">Twitter</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/groups/yiitalk/" target="_blank" rel="nofollow" title="join yii group at facebook">Facebook</a></li>
+					<li class="linkedin"><a href="http://www.linkedin.com/groups?gid=1483367" target="_blank" rel="nofollow" title="join yii group at linkedin">LinkedIn</a></li>
+					<li class="feeds"><a title="RSS feeds" href="http://www.yiiframework.com/rss.xml/">RSS Feeds</a></li>
+				</ul>
+				<div class="clear"></div>
+				<a href="http://www.yiiframework.com/tos/">Terms of Service</a> |
+				<a href="http://www.yiiframework.com/license/">License</a> |
+				<a href="http://www.yiiframework.com/contact/">Contact Us</a><br>
+				Copyright © 2014 by <a href="http://www.yiisoft.com/">Yii Software LLC</a>.
+				All Rights Reserved.
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+    <script type="text/javascript" src="./readme_files/site-20121004195728.js"></script>
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['site._setAccount', 'UA-5843896-1']);
+_gaq.push(['site._trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+function trackClick(link, action, category) {
+	action=action || link.href;
+	category=category || 'Outbound Links';
+	try {
+		_gaq.push(['site._trackEvent', category, action]);
+		setTimeout('document.location = "' + link.href + '"', 250);
+	}catch(err){}
+	return false;
+}
+</script>
+<script type="text/javascript" src="./readme_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript" src="./readme_files/widgets.js"></script>
+
+
+</body></html>
