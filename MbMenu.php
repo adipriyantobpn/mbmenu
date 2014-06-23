@@ -75,6 +75,8 @@ class MbMenu extends CMenu
 			      $items[$i]['itemOptions']['class'].=' parent';
 		      else
 			      $items[$i]['itemOptions']['class']='parent'; 
+	  		
+	  		$items[$i]['items']=$this->cssParentItems($item['items']);
 	  		}
       }
       
@@ -90,8 +92,9 @@ class MbMenu extends CMenu
           $this->setId('nav');
 
         $this->nljs = "\n";
-        $this->items=$this->cssLastItems($this->items);
         $this->items=$this->cssParentItems($this->items);
+        $this->items=$this->cssLastItems($this->items);
+
         parent::init();
     }
       
@@ -164,10 +167,6 @@ class MbMenu extends CMenu
 	  		if(isset($item['items']))
 	  		{
 	  			$items[$i]['items']=$this->normalizeItems($item['items'],$route,$hasActiveChild, 1);
- 		      if(isset($item['itemOptions']['class']))
-			      $items[$i]['itemOptions']['class'].=' parent';
-		      else
-			      $items[$i]['itemOptions']['class']='parent'; 
 	  			if(empty($items[$i]['items']) && $this->hideEmptyItems)
 	  				unset($items[$i]['items']);
 	  		}
