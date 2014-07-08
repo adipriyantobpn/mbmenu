@@ -9,7 +9,7 @@
  */
 
 Yii::import('zii.widgets.CMenu');
-Yii::import('application.extensions.mbmenu.Browser');
+Yii::import('application.extensions.adipriyantobpn_mbmenu.Browser');
 
 class MbMenu extends CMenu
 {
